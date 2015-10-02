@@ -1,7 +1,7 @@
 
 # Read the data 
 library(xlsx)
-haricot<-read.xlsx("C://R_Training//anova_haricot_dbca.xlsx", sheetIndex=1,header=TRUE)
+haricot<-read.xlsx("C://R_Training//anova_haricot_dbca.xls", sheetIndex=1,header=TRUE)
 
 # Structure of variables
 str(haricot)
@@ -19,3 +19,10 @@ summary(haricot_aov)
 # Multiple comparisons
 library(agricolae)
 LSD.test(haricot_aov, "Variete", console=T)
+
+
+
+
+
+
+ 

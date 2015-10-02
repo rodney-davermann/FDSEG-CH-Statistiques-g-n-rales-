@@ -36,6 +36,9 @@ LSD.test(Grenadia_anova,"Variete", console=TRUE)
 library(agricolae)
 HSD.test(Grenadia_anova, "Variete", console=T)
 
+# c) Duncan test 
+duncan.test(Grenadia_anova, "Variete", console=T, group=F)
+
 
 
 
